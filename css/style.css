@@ -1,9 +1,4 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -12,7 +7,14 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
-
+#home {
+  margin: 30px 0 10px 0;
+  font-size: 19px;
+  font-weight: 12;
+  line-height: 18px;
+  /* text-transform: uppercase; */
+  color: #fff;
+}
 a {
   color: #2dc997;
 }
@@ -83,13 +85,15 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   padding: 30px 0;
-  height: 92px;
+  height: 70px;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: gainsboro
+  
 }
 
 #header #logo {
@@ -97,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  font-size: 35px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -108,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: black;
 }
 
 #header #logo img {
@@ -126,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-fixed {
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(189, 198, 204, 0.9);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -137,11 +141,40 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url(../img/homepage.jpg) top center;
+  height: 100%;
+  /* background: url(../img/homepage.jpg) top center; */
   background-size: cover;
   position: relative;
+  /* margin-top: 80px; */
 }
+#image {
+  /* height: 350px; */
+  max-width:100%;
+  padding: 4% 18% 0px 18%;
+  height: 56%
+  
+  
+ 
+  
+
+  
+
+  /* margin-top:100px; */
+  /* padding-top: 70px;
+  
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+/* .welcome {
+  padding-bottom: 500px;
+} */
+/* .carouselExampleCaptions {
+padding-left: 15899%
+  
+} */
+/* .bd-example {
+  margin-bottom: 50px;
+} */
 
 @media (min-width: 1024px) {
   #hero {
@@ -170,16 +203,27 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  /* background-color:	#CD853F; */
+  background-color: #DEB887
 }
 
 #hero h1 {
-  margin: 30px 0 10px 0;
+  margin: 0px 0 40px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
+  color:black;
 }
+#hero h4 {
+  margin: 0px 0 40px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  color:black;
+}
+
 
 @media (max-width: 768px) {
   #hero h1 {
@@ -213,8 +257,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid rgb(14, 13, 13);
+  color: rgb(8, 8, 8);
 }
 
 #hero .btn-get-started:hover {
@@ -271,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 .sf-arrows .sf-with-ul:after {
   content: "\f107";
   position: absolute;
-  right: 15px;
+  right: 10px;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -304,7 +348,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 13px;
   outline: none;
+  background-color: #A0522D;
 }
+
 
 .nav-menu > li {
   margin-left: 10px;
@@ -346,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #fff;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -379,7 +425,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #A0522D;
 }
 
 @media (max-width: 768px) {
@@ -714,23 +760,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Portfolio Section
 --------------------------------*/
-#portfolio {
+.portfolio {
   background: #f7f7f7;
   padding: 80px 0;
 }
 
-#portfolio #portfolio-wrapper {
+.portfolio #portfolio-wrapper {
   padding-right: 15px;
 }
 
-#portfolio #portfolio-flters {
+.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 0 45px 0;
   list-style: none;
   text-align: center;
 }
 
-#portfolio #portfolio-flters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   margin: 0 10px;
   display: inline-block;
@@ -745,12 +791,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
   background: #2dc997;
   color: #fff;
 }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   position: relative;
   height: 200px;
   overflow: hidden !important;
@@ -759,18 +805,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1);
 }
 
-#portfolio .portfolio-item a {
+.portfolio .portfolio-item a {
   display: block;
   margin-right: 15px;
 }
 
-#portfolio .portfolio-item img {
+.portfolio .portfolio-item img {
   position: relative;
   top: 0;
   transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#portfolio .portfolio-item .details {
+.portfolio .portfolio-item .details {
   height: 50px;
   background: #2dc997;
   position: absolute;
@@ -780,7 +826,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#portfolio .portfolio-item .details h4 {
+.portfolio .portfolio-item .details h4 {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
@@ -788,18 +834,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#portfolio .portfolio-item .details span {
+.portfolio .portfolio-item .details span {
   display: block;
   color: #fff;
   font-size: 13px;
   padding-left: 8px;
 }
 
-#portfolio .portfolio-item:hover .details {
+.portfolio .portfolio-item:hover .details {
   bottom: 0;
 }
 
-#portfolio .portfolio-item:hover img {
+.portfolio .portfolio-item:hover img {
   top: -30px;
 }
 
@@ -968,6 +1014,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 1%;
 }
 
 #footer .copyright {
@@ -980,3 +1030,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+.welcome{
+height: 45%;
+
+}
+/* 
+#welcome2 {
+  margin-bottom: 150%
+} */
